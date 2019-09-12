@@ -1,25 +1,39 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import { StateProvider } from './lib/StateProvider'
+import NewPost from './components/NewPost'
+import ListPosts from './components/ListPosts'
+import Stats from './components/Stats'
+
+import './App.scss';
 
 function App() {
+  const initialState = {
+    posts: []
+  }
+  
+  const reducer = (state, action) => {
+    switch (action.type) {
+      case 'loadAll':
+        return { posts: action.posts }
+      default:
+        return state
+    }
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <StateProvider initialState={initialState} reducer={reducer}>
+      <div className="App">
+        <header className="header">
+          <span>Cypress end to end como si no hubiera un mañana</span>
+        </header>
+        <div className="container">
+          <NewPost />
+          <Stats />
+          <ListPosts />
+        </div>
+      </div>
+    </StateProvider>
   );
 }
 

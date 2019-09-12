@@ -1,0 +1,19 @@
+.App {
+  min-width: 500px;
+  .header {
+    background-color: #7dc3c1;
+    color: #fff;
+    font-size: 20px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .container {
+    margin: auto 50px;
+  }
+}
