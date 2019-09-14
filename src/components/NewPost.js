@@ -24,15 +24,13 @@ export default function NewPost() {
         posts: posts
       })
     } catch (err) {
-      console.log('=============================');
       console.log(err);
-      console.log('=============================');
     }
   }
 
   return (
     <div className="new-post">
-      <textarea rows="4" cols="48" value={post} onChange={e => setPost(e.target.value)} />
+      <textarea rows="4" cols="48" value={post} className="new-post-textarea" autoFocus onChange={e => setPost(e.target.value)} />
       <button onClick={add} className="btn add-btn" disabled={post === '' ? true : false}>Add</button>
     </div>
   )

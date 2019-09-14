@@ -35,9 +35,7 @@ export default function ListPosts() {
       setNoMoreLikes(false)
 
     } catch (err) {
-      console.log('=============================');
       console.log(err);
-      console.log('=============================');
       setNoMoreLikes(false)
     }
   }
@@ -51,9 +49,7 @@ export default function ListPosts() {
       dispatch({ type: 'loadAll', posts: newPosts })
 
     } catch (err) {
-      console.log('=============================');
       console.log(err);
-      console.log('=============================');
     }
   }
 

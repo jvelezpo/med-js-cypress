@@ -1,3 +1,9 @@
 {
-  "posts": []
+  "posts": [
+    {
+      "post": "medJS",
+      "likes": 0,
+      "id": 1
+    }
+  ]
 }
