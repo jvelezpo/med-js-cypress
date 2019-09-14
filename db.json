@@ -4,6 +4,16 @@
       "post": "medJS",
       "likes": 0,
       "id": 1
+    },
+    {
+      "post": "sdsdsd",
+      "likes": 0,
+      "id": 2
+    },
+    {
+      "post": "db",
+      "likes": 0,
+      "id": 3
     }
   ]
 }
