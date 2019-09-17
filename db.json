@@ -1,29 +1,4 @@
 {
   "posts": [
-    {
-      "post": "medJS",
-      "likes": 0,
-      "id": 1
-    },
-    {
-      "post": "sdsdsd",
-      "likes": 0,
-      "id": 2
-    },
-    {
-      "post": "db",
-      "likes": 0,
-      "id": 3
-    },
-    {
-      "post": "n",
-      "likes": 0,
-      "id": 4
-    },
-    {
-      "post": "hkb",
-      "likes": 0,
-      "id": 5
-    }
   ]
 }
