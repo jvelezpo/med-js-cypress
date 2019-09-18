@@ -10,9 +10,12 @@ export default function Stats() {
 
   return (
     <div className="stats">
-      Total posts: {posts.length}
-      <br />
-      Total Likes: {posts.reduce((total, n) => total + n.likes, 0)}
+      <div>
+        Total posts: <span className="total-posts">{posts.length}</span>
+      </div>
+      <div>
+        Total Likes: <span className="total-posts-likes">{posts.reduce((total, n) => total + n.likes, 0)}</span>
+      </div>
     </div>
   )
 }
