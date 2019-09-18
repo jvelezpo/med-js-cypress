@@ -1,4 +1,8 @@
 describe('end to end test', () => {
+
+  beforeEach(() => {
+    cy.request('DELETE', 'http://localhost:3030/api/posts/deleteAll')
+  })
   
   it('add a new post', () => {
 
