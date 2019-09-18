@@ -8,9 +8,11 @@ describe('Test like there is no tomorrow', () => {
         "post": "medJS",
         "likes": 3,
         "id": 1 }
-    ])
+    ]).as('load')
 
     cy.visit('/')
+    cy.wait('@load')
+    
     cy.get('.posts-list .post')
       .should('have.length', 1)
 
